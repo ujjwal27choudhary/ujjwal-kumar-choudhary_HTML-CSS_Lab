@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" href="animation.css">
+<style>
+.container 
+{
+  background-color: whitesmoke;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+h1 
+{
+    text-align: center;
+}
+
+.container article 
+{
+    display: inline-block;
+}
+
+p 
+{
+    padding-left: 25px;
+}
+
+div 
+{
+    width: 40px;
+    height: 300px;
+    margin: 20px;
+    background-color: rgb(202, 198, 192);
+}
+
+#bar30 
+{
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    animation-name: bar30Animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes bar30Animation 
+{
+    0% 
+    {
+        height: 100%;
+        background-color: white;
+    }
+    100% 
+    {
+        height: 70%;
+        background-color: white;
+    }
+}
+
+#bar40 
+{
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    animation-name: bar40Animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes bar40Animation 
+{
+    0% 
+    {
+        height: 100%;
+        background-color: white;
+    }
+    100% 
+    {
+        height: 60%;
+        background-color: white;
+    }
+}
+
+#bar80 
+{
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    animation-name: bar80Animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes bar80Animation 
+{
+    0% 
+    {
+        height: 100%;
+        background-color: white;
+    }
+    100% 
+    {
+        height: 20%;
+        background-color: white;
+    }
+}
+</style>
+</head>
+<body>
+    <section class='container'>
+        <article>
+            <div>
+                <article id='bar30'></article>
+            </div>
+            <p>30%</p>
+        </article>
+        <article>
+            <div>
+                <article id='bar40'></article>
+            </div>
+            <p>40%</p>
+        </article>
+        <article>
+            <div>
+                <article id='bar80'></article>
+            </div>
+            <p>80%</p>
+        </article>
+        <h1>Bar Plot</h1>
+    </section>
+</body>
+</html>
